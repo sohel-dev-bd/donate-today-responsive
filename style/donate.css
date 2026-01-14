@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 /* common class */
-.btn-primary{
+.btn-primary {
     border: none;
     padding: 16px 20px;
     font-size: 1.25rem;
@@ -14,24 +14,39 @@
     color: #FFFFFF;
 }
 
-.inter-fonts{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+.light-text {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #707070;
+}
+
+.dark-text {
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: black;
+}
+
+
+.inter-fonts {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
 }
 
 
 /* nav styling */
-header{
-  max-width: 1270px;
+header {
+    max-width: 1270px;
     min-height: 600px;
 }
-.hero-section{
-   background-image: url("../images/Rectangle\ 237.png");
-   max-width: 100%;
-   background-repeat: no-repeat;
-   background-size: 100%;
+
+.hero-section {
+    background-image: url("../images/Rectangle\ 237.png");
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-.hero-parents{
+
+.hero-parents {
     justify-content: center;
     text-align: center;
     padding: 150px 200px;
@@ -40,12 +55,13 @@ header{
 
 }
 
-.hero-text{
+.hero-text {
     font-size: 4rem;
     font-weight: 700;
     color: #FFFFFF;
 }
-.hero-title{
+
+.hero-title {
     font-size: 1.01rem;
     font-weight: 400;
     margin: 25px;
@@ -53,17 +69,17 @@ header{
 }
 
 /* donate-today-section styling */
-.donate-today-section{
+.donate-today-section {
     text-align: center;
 }
 
-#color-number{
+#color-number {
     border: 2px solid #ff5959;
     color: #ff5959;
     background-color: #ffeeee;
 }
 
-.number{
+.number {
     border: none;
     padding: 40px 30px;
     background-color: #f2f2f2;
@@ -72,7 +88,7 @@ header{
     font-weight: 700;
 }
 
-.number-title{
+.number-title {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin: 30px 200px;
@@ -81,74 +97,99 @@ header{
 
 
 
-.donate-title{
+.donate-title {
     font-weight: 700;
     font-size: 2.8rem;
     color: black;
     margin: auto 300px 20px;
 }
 
-.donate-description{
+.donate-description {
     font-size: 1rem;
     font-weight: 400;
     line-height: 20px;
     color: #707070;
 }
-#paragraph{
+
+#paragraph {
     font-size: 1rem;
     font-weight: 300;
     color: #707070;
     margin: 70px auto auto;
 }
-hr{
-    margin:auto 200px  30px;
+
+hr {
+    margin: auto 200px 30px;
 }
 
 /* plan Section Start */
-.plan{
+.plan {
     text-align: center;
     margin: 80px 150px;
 }
 
-.plan-card{
+.plan-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.box-item{
+.box-item {
     border: 2px solid rebeccapurple;
     width: 250px;
     height: 250px;
     border-radius: 8px;
     text-align: start;
-    margin-top: 50px ;
+    margin-top: 50px;
     padding: 20px;
 }
 
 
-.box-item h3{
+.box-item h3 {
     margin: 31px auto 16px;
     font-size: 1.5rem;
     font-weight: 400px;
     color: #121212;
 }
-.box-item p{
-    font-size: 1rem;
-    font-weight: 300;
-    color: #707070;
-}
 
-#box-1{
+#box-1 {
     background-color: #edf5f6;
 }
-#box-2{
-background-color: #ffeeee;
+
+#box-2 {
+    background-color: #ffeeee;
 }
-#box-3{
+
+#box-3 {
     background-color: #fff4d6;
 }
 
+/* Their lives depend section start */
+.thire-parents {
+    margin: 100px 100px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+}
+
+.thire-images img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.thire-title {
+    text-align: start;
+}
+
+.thire-title h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.thire-title p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 
 
@@ -159,21 +200,37 @@ background-color: #ffeeee;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
+
     .donate-title {
         text-align: center;
         margin: 0px auto;
     }
 
-    .plan-card{
+    .plan-card,
+    .thire-parents {
         grid-template-columns: repeat(1, 1fr);
         margin: 0 auto;
     }
-    .plan{
-    margin: 0 60px;
+
+    .plan {
+        margin: 0 70px;
     }
-    .plan-item{
+
+    .plan-item {
         text-align: center;
         margin-top: 40px;
     }
+
+    .dark-text {
+        font-weight: 600;
+        font-size: 2rem;
+        color: black;
+        text-align: center;
+    }
+    .thire-parents{
+        margin-top: 25px;
+    }
     
+
+
 }
