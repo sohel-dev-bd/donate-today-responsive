@@ -3,7 +3,177 @@
     margin: 0;
 }
 
-h2{
-    background-color: yellow;
-    padding: 50px;
+/* common class */
+.btn-primary{
+    border: none;
+    padding: 16px 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #ff5959;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.inter-fonts{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+/* nav styling */
+header{
+  max-width: 1270px;
+    min-height: 600px;
+}
+.hero-section{
+   background-image: url("../images/Rectangle\ 237.png");
+   max-width: 100%;
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+.hero-parents{
+    justify-content: center;
+    text-align: center;
+    padding: 150px 200px;
+    max-width: 800px;
+    height: 350px;
+
+}
+
+.hero-text{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.hero-title{
+    font-size: 1.01rem;
+    font-weight: 400;
+    margin: 25px;
+    color: #FFFFFF;
+}
+
+/* donate-today-section styling */
+.donate-today-section{
+    text-align: center;
+}
+
+#color-number{
+    border: 2px solid #ff5959;
+    color: #ff5959;
+    background-color: #ffeeee;
+}
+
+.number{
+    border: none;
+    padding: 40px 30px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.number-title{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 30px 200px;
+    gap: 20px;
+}
+
+
+
+.donate-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: black;
+    margin: auto 300px 20px;
+}
+
+.donate-description{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: #707070;
+}
+#paragraph{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #707070;
+    margin: 70px auto auto;
+}
+hr{
+    margin:auto 200px  30px;
+}
+
+/* plan Section Start */
+.plan{
+    text-align: center;
+    margin: 80px 150px;
+}
+
+.plan-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.box-item{
+    border: 2px solid rebeccapurple;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    text-align: start;
+    margin-top: 50px ;
+    padding: 20px;
+}
+
+
+.box-item h3{
+    margin: 31px auto 16px;
+    font-size: 1.5rem;
+    font-weight: 400px;
+    color: #121212;
+}
+.box-item p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #707070;
+}
+
+#box-1{
+    background-color: #edf5f6;
+}
+#box-2{
+background-color: #ffeeee;
+}
+#box-3{
+    background-color: #fff4d6;
+}
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .number-title {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .donate-title {
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .plan-card{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+    .plan{
+    margin: 0 60px;
+    }
+    .plan-item{
+        text-align: center;
+        margin-top: 40px;
+    }
+    
 }
